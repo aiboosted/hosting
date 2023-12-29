@@ -68,6 +68,19 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1em;
+        }
+
+        .social-icons img {
+            max-width: 30px;
+            height: auto;
         }
     </style>
 </head>
@@ -88,6 +101,10 @@
     </section>
 
     <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
         &copy; 2023 Ai Boosted Brand Lab. All rights reserved.
     </footer>
 </body>
