@@ -68,6 +68,11 @@
             text-align: center;
         }
 
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
         .logo {
             max-width: 150px;
             margin-right: 1em;
@@ -162,6 +167,11 @@
             .service-item {
                 width: 100%;
             }
+
+            .logo-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
@@ -194,7 +204,10 @@
     </nav>
 
     <header>
-        <h1>Ai <span class="highlight">Boosted</span> Brand Lab</h1>
+        <div class="logo-container">
+            <img src="half_logo.png" alt="Ai Boosted Brand Lab Logo" class="logo">
+            <h1>Ai <span class="highlight">Boosted</span> Brand Lab</h1>
+        </div>
     </header>
 
     <section class="services-section">
