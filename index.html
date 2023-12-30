@@ -5,6 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ai Boosted Brand Lab</title>
     <style>
+         nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            border-radius: 0 0 8px 8px;
+            z-index: 1;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            width: 100%;
+            text-align: center;
+            padding: 0.5em;
+        }
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -59,17 +105,152 @@
             border-radius: 8px;
         }
 
-        footer {
+        .services-section {
+            background-color: #fff;
+            padding: 2em;
+            margin-top: 2em;
+            border-radius: 8px;
+            text-align: center; /* Center the content */
+        }
+
+        .services-heading {
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #333;
+            position: relative;
+            display: inline-block;
+        }
+
+        .services-heading::before,
+        .services-heading::after {
+            content: '';
+            position: absolute;
+            width: 30%;
+            height: 2px;
+            background-color: #3498db;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .services-heading::before {
+            left: -35%;
+        }
+
+        .services-heading::after {
+            right: -35%;
+        }
+
+        .services-subsection {
+            margin-top: 1em;
+        }
+
+        .services-subsection ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Center the items and arrange them in rows */
+        }
+
+        .services-subsection ul li {
+            margin: 0;
+            padding: 0;
+            flex: 0 0 45%; /* Adjust the width of each industry name */
+            margin-bottom: 1em;
+            position: relative;
+            /* padding-left: 20px; Remove the padding */
+        }
+
+        .services-subsection ul li::before {
+            content: ''; /* Remove the bullet point */
+        }
+
+        .services-subsection {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .service-item {
+            width: 48%; /* Adjust the width of each service item */
+            margin-bottom: 2em;
+        }
+
+        .logo {
+            max-width: 80px; /* Adjust the maximum width of the logos */
+            margin-bottom: 1em;
+        }
+
+        .industries-section {
+            background-color: #000;
+            color: #fff;
+            padding: 3em; /* Increase the padding for a larger size */
+            margin-top: 2em;
+            border-radius: 8px;
+            text-align: center; /* Center the content */
+            width: 100%; /* Stretch horizontally */
+            max-width: 1200px; /* Adjust the max-width as needed */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .industries-header {
+            font-size: 1.5em;
+            color: #fff;
+            margin-bottom: 1em;
+        }
+
+        .industries-heading {
+            font-size: 2.5em; /* Increase the font size */
+            margin-bottom: 1em;
+        }
+
+        .industries-subsection ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Center the items and arrange them in rows */
+        }
+
+        .industries-subsection ul li {
+            margin: 0;
+            padding: 0;
+            flex: 0 0 45%; /* Adjust the width of each industry name */
+            margin-bottom: 1em;
+            position: relative;
+            /* padding-left: 20px; Remove the padding */
+        }
+
+        .industries-subsection ul li::before {
+            content: ''; /* Remove the bullet point */
+        }
+
+        .footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 1em;
             position: fixed;
             bottom: 0;
-            width: 100%;
+            width: 98%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        .footer-section {
+            background-color: #555;
+            color: #fff;
+            padding: 1em;
+            position: fixed;
+            bottom: 5px;
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 1px; /* Optional: Add border-radius for rounded corners */
         }
 
         .social-icons {
@@ -78,7 +259,7 @@
         }
 
         .social-icons img {
-            max-width: 30px;
+            max-width: 20px;
             height: auto;
         }
     </style>
@@ -87,6 +268,24 @@
     <header>
         <img src="half_logo.png" alt="Ai Boosted Brand Lab Logo" class="logo">
         <h1>Ai <span class="highlight">Boosted</span> Brand Lab</h1>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">AI PRODUCTS</a></li>
+                <li>
+                    <a href="#">SERVICES</a>
+                    <ul>
+                        <li><a href="#">IntelliOCR Hub</a></li>
+                        <li><a href="#">AstroidConnect AI</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">RESOURCES</a></li>
+                <li><a href="#">CAREERS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    
     </header>
 
     <section>
@@ -98,13 +297,73 @@
 
         <img src="posture2.jpg" alt="Posture 2" class="posture">
     </section>
-    <section>
-        <img src="Ideal-business-partners.jpg" alt="Posture 1" class="posture">
-        <h2>our patner</h2>
-        <img src="posture2.jpg" alt="Posture 2" class="posture">
+
+    <section class="services-section">
+        <h2 class="services-heading">Services</h2>
+        
+        <div class="services-subsection">
+            <h3>Enterprise Solutions</h3>
+            <p>Our enterprise solutions are tailored to meet the unique needs of businesses, ensuring efficiency and scalability.</p>
+        </div>
+
+        <div class="services-subsection">
+            <h3>Digital Transformation</h3>
+            <p>Transform your business processes and operations with our digital transformation services, staying ahead in the digital era.</p>
+        </div>
+
     </section>
 
-    <footer>
+    
+    <section class="services-section">
+        <h2 class="IntelliHub">Our product IntelliHub</h2>
+    
+        <div class="services-container">
+            <div class="services-subsection">
+                <div class="service-item">
+                    <img src="intelliocr_logo.png" alt="IntelliOCR Logo" class="logo">
+                    <h3>IntelliOCR Hub</h3>
+                    <p>Our enterprise solutions are tailored to meet the unique needs of businesses, ensuring efficiency and scalability.</p>
+                </div>
+            </div>
+    
+            <div class="services-subsection">
+                <div class="service-item">
+                    <img src="astroidconnect_logo.png" alt="AstroidConnect AI Logo" class="logo">
+                    <h3>AstroidConnect AI</h3>
+                    <p>Transform your business processes and operations with our digital transformation services, staying ahead in the digital era.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="industries-section">
+        <h2 class="Our Industries-heading">Industries</h2>
+        <div class="industries-subsection">
+            <ul>
+                <li>Automotive</li>
+                <li>Food Processing</li>
+                <li>Manufacturing</li>
+                <li>Logistics</li>
+                <li>Oil & Gas</li>
+                <li>Retail</li>
+                <li>Consumer Packaged Goods</li>
+                <li>Healthcare & Life Sciences</li>
+                <li>Travel & Transportation</li>
+                <li>Media & Entertainment</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="footer-section">
+        <h2 class="industries-heading">Live Section</h2>
+        <a href="https://www.facebook.com"><img src="facebook-icon.png" alt=""></a>
+        <div class="industries-subsection">
+        </div>
+    </section>
+
+    <footer class="footer">
         <div class="social-icons">
             <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
             <a href="https://www.linkedin.com"><img src="email.png" alt="LinkedIn"></a>
