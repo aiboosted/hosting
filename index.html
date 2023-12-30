@@ -1,238 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ai Boosted Brand Lab</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0.5em;
-            position: relative;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        nav ul li {
-            position: relative;
-        }
-
-        nav ul li ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #333;
-            border-radius: 0 0 8px 8px;
-            z-index: 1;
-        }
-
-        nav ul li:hover ul {
-            display: block;
-        }
-
-        nav ul li ul li {
-            width: 100%;
-            text-align: center;
-            padding: 0.5em;
+            background-color: #fff;
+            color: #000;
         }
 
         header {
-            background-color: #333;
+            background-color: #fcd200;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
             color: #fff;
-            padding: 1em;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
+        nav a:hover {
+            background-color: #ddd;
+            color: #000;
         }
 
-        .logo {
-            max-width: 150px;
-            margin-right: 1em;
-        }
-
-        h1 {
-            color: #fff;
-            margin: 0;
-        }
-
-        .highlight {
-            color: #ffcc00;
-        }
-
-        .services-section {
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 2em;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .services-subsection {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .service-item {
-            width: 48%;
-            margin-bottom: 2em;
-            padding: 1em;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-
-        .logo {
-            max-width: 80px;
-            margin-bottom: 1em;
+        section {
+            padding: 20px;
         }
 
         footer {
-            background-color: #333;
+            background-color: #000;
             color: #fff;
             text-align: center;
-            padding: 1em;
+            padding: 10px;
             position: fixed;
             bottom: 0;
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
-        .social-icons {
-            display: flex;
-            gap: 1em;
-        }
-
-        .social-icons img {
-            max-width: 20px;
-            height: auto;
-        }
-
-        /* Media query for smaller screens */
-        @media only screen and (max-width: 768px) {
-            nav {
-                flex-direction: column;
-            }
-
-            nav a {
-                margin: 0.5em 0;
-            }
-
-            nav ul {
-                width: 100%;
-            }
-
-            header {
-                padding: 1em 0;
-            }
-
-            .logo {
-                margin: 1em 0;
-            }
-
-            h1 {
-                margin-top: 0.5em;
-            }
-
-            .service-item {
-                width: 100%;
-            }
-
-            .logo-container {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+        footer img {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
         }
     </style>
 </head>
-<header>
-        <div class="logo-container">
-            <img src="half_logo.png" alt="Ai Boosted Brand Lab Logo" class="logo">
-            <h1>Ai <span class="highlight">Boosted</span> Brand Lab</h1>
-        </div>
-</header>
+
 <body>
+
+    <header>
+        <h1>Ai Boosted Brand Lab</h1>
+    </header>
+
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li>
-                <a href="#">AI PRODUCTS</a>
-                <ul>
-                    <li><a href="#">Product 1</a></li>
-                    <li><a href="#">Product 2</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">SERVICES</a>
-                <ul>
-                    <li><a href="#">IntelliOCR Hub</a></li>
-                    <li><a href="#">AstroidConnect AI</a></li>
-                </ul>
-            </li>
-            <li><a href="#">DATA ENGINEERING</a></li>
-            <li><a href="#">INDUSTRIES</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">RESOURCES</a></li>
-            <li><a href="#">CAREERS</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
+        <a href="#home">Home</a>
+        <a href="#ai-products">AI PRODUCTS</a>
+        <a href="#services">SERVICES</a>
+        <a href="#data-engineering">DATA ENGINEERING</a>
+        <a href="#industries">INDUSTRIES</a>
+        <a href="#about">ABOUT</a>
+        <a href="#resources">RESOURCES</a>
+        <a href="#careers">CAREERS</a>
+        <a href="#contact">CONTACT</a>
     </nav>
 
-    
-
-    <section class="services-section">
-        <h2 class="IntelliHub">Our product IntelliHub</h2>
-
-        <div class="services-subsection">
-            <div class="service-item">
-                <img src="intelliocr_logo.png" alt="IntelliOCR Logo" class="logo">
-                <h3>IntelliOCR Hub</h3>
-                <p>Our enterprise solutions are tailored to meet the unique needs of businesses, ensuring efficiency and scalability.</p>
+    <section>
+        <h2>Welcome to Ai Boosted Brand Lab!</h2>
+        <!-- Add your content here -->
+        <div>
+            <h3>Latest Blog Posts</h3>
+            <!-- Add blog posts dynamically -->
+            <div>
+                <h4>Blog Post Title</h4>
+                <p>Blog post content goes here...</p>
             </div>
-
-            <div class="service-item">
-                <img src="astroidconnect_logo.png" alt="AstroidConnect AI Logo" class="logo">
-                <h3>AstroidConnect AI</h3>
-                <p>Transform your business processes and operations with our digital transformation services, staying ahead in the digital era.</p>
+            <div>
+                <h4>Another Blog Post Title</h4>
+                <p>Blog post content goes here...</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-        </div>
-        &copy; 2023 Ai Boosted Brand Lab. All rights reserved.
+        <!-- Social Media Icons -->
+        <a href="#"><img src="facebook-logo.png" alt="Facebook"></a>
+        <a href="#"><img src="instagram-logo.png" alt="Instagram"></a>
+        <a href="#"><img src="linkedin-logo.png" alt="LinkedIn"></a>
     </footer>
+
 </body>
+
 </html>
