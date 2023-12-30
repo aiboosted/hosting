@@ -24,10 +24,11 @@
             width: 70px;
             height: 70px;
             margin-right: 10px;
+            vertical-align: middle;
         }
 
         header h1 {
-            display: inline;
+            display: inline-block;
         }
 
         header h1 .white-text {
@@ -79,6 +80,25 @@
             height: 30px;
             margin: 0 10px;
         }
+
+        /* Style for Industry Coverage */
+        #industry ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #industry li {
+            width: 48%; /* Adjust as needed */
+            margin-bottom: 10px;
+        }
+
+        #industry li img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -86,7 +106,7 @@
 
     <header>
         <img src="half_logo.png" alt="Company Logo">
-        <h1<span class="white-text">Ai</span> Boosted <span class="sky-text">Brand Lab</span></h1>
+        <h1><span class="white-text">Ai</span> Boosted <span class="sky-text">Brand Lab</span></h1>
     </header>
 
     <nav>
@@ -117,9 +137,6 @@
 
     <section id="industry">
         <h2>Industry Coverage</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis vel justo lacinia blandit.
-            Vivamus ultricies, ex vitae vehicula varius, tellus elit cursus urna, vel gravida lorem ligula vitae
-            tortor.</p>
         <div>
             <h3>Industries We Serve</h3>
             <ul>
@@ -127,8 +144,7 @@
                 <li>Food Processing <img src="food-processing-logo.png" alt="Food Processing Logo"></li>
                 <li>Manufacturing <img src="manufacturing-logo.png" alt="Manufacturing Logo"></li>
                 <li>Logistics <img src="logistics-logo.png" alt="Logistics Logo"></li>
-                <li>Oil & Gas <img src="oil-gas-logo.png" alt="Oil & Gas Logo"></li>
-                <li>Retail <img src="retail-logo.png" alt="Retail Logo"></li>
+                <!-- Add more industries as needed -->
             </ul>
         </div>
     </section>
@@ -152,10 +168,10 @@
 
     <footer>
         <p>&copy; 2023 Ai Boosted Brand Lab. All rights reserved.</p>
+        <!-- Replace these URLs with your actual social media profiles -->
         <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
-        <a href="https://www.linkedin.com"><img src="email.png" alt="LinkedIn"></a>
-        <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="Contact"></a>
-        <a href="https://www.linkedin.com"><img src="instagram.jpg" alt="instagram"></a>
+        <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com"><img src="instagram-icon.png" alt="Instagram"></a>
     </footer>
 
 </body>
