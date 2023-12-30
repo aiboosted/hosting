@@ -81,11 +81,19 @@
             color: #ffcc00;
         }
 
-        /* Rest of your existing styles */
+        .services-section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
 
         .services-subsection {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .service-item {
@@ -96,6 +104,29 @@
         .logo {
             max-width: 80px;
             margin-bottom: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1em;
+        }
+
+        .social-icons img {
+            max-width: 20px;
+            height: auto;
         }
     </style>
 </head>
@@ -131,8 +162,6 @@
         <h1>Ai <span class="highlight">Boosted</span> Brand Lab</h1>
     </header>
 
-    <!-- ... (Existing content) ... -->
-
     <section class="services-section">
         <h2 class="IntelliHub">Our product IntelliHub</h2>
 
@@ -142,9 +171,7 @@
                 <h3>IntelliOCR Hub</h3>
                 <p>Our enterprise solutions are tailored to meet the unique needs of businesses, ensuring efficiency and scalability.</p>
             </div>
-        </div>
 
-        <div class="services-subsection">
             <div class="service-item">
                 <img src="astroidconnect_logo.png" alt="AstroidConnect AI Logo" class="logo">
                 <h3>AstroidConnect AI</h3>
@@ -153,6 +180,12 @@
         </div>
     </section>
 
-    <!-- ... (Remaining content) ... -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
+        &copy; 2023 Ai Boosted Brand Lab. All rights reserved.
+    </footer>
 </body>
 </html>
